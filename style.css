@@ -313,3 +313,18 @@ p { font-size: 1.5rem; line-height: 1.3; color: #333; margin: 0; font-weight: bo
     animation: heartbeat 0.4s infinite alternate;
     filter: drop-shadow(0 0 15px red);
 }
+
+/* --- AJUSTE URGENTE PARA CENTRAR EN CELULARES ALV --- */
+@media (max-width: 800px) {
+    .book {
+        /* Mueve el lomo a la derecha y ajusta el tamaño para que se vea el libro abierto completo */
+        transform: translateX(50%) scale(0.8);
+    }
+}
+
+@media (max-width: 450px) {
+    .book {
+        /* Ajuste para pantallas de celulares más pequeños (iPhone, Androids estándar) */
+        transform: translateX(45%) scale(0.65);
+    }
+}
